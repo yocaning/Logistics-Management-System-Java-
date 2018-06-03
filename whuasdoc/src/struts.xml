@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+		<include file="struts-default.xml"></include>
+		<package name="huasdoc" extends="struts-default">
+			<!-- 员工管理模块+用户登录模块 -->
+			<action name="UserAction_*" class = "com.workit.action.UserAction" method="{1}">
+				<result name="loginsucc" type="chain" >PowerAction_findallpower</result>
+				<result name="failer" >/index.jsp</result>
+				<result name="findalluser" >/userManage/showalluser.jsp</result>
+				<result name="deletesucc" type="chain">UserAction_findalluser</result>
+				<result name="savesucc"   type="chain">UserAction_findalluser</result>
+				<result name="update" type="chain" >PreUserAction_getdeptrole</result>
+				<result name="updateuser"  type="chain">UserAction_findalluser</result>
+			</action>
+			<!-- 权限管理模块 -->
+			<action name="PowerAction_*" class = "com.workit.action.PowerAction" method ="{1}">
+				<result name="findallpower">/manage.jsp</result>
+				<result name="findAllpower">/powerManage/showallpower.jsp</result>
+				<result name="deletesucc" type="chain">PowerAction_findAllpower</result>
+				<result name="savesucc" type="chain">PowerAction_findAllpower</result>
+				<result name="update" >powerManage/updatepower.jsp</result>
+				<result name="updatepower" type="chain">PowerAction_findAllpower</result>
+			</action>
+			<!-- 车辆管理模块 -->
+			<action name="CarAction_*" class = "com.workit.action.CarAction" method ="{1}">
+				<result name="findallcar">/carManage/showallcar.jsp</result>
+				<result name="deletesucc" type="chain">CarAction_findallcar</result>
+				<result name="savesucc" type="chain">CarAction_findallcar</result>
+				<result name="update" >carManage/updatecar.jsp</result>
+				<result name="updatecar" type="chain">CarAction_findallcar</result>
+			</action>
+			<!-- 车辆管理模块 -->
+			<action name="DeptAction_*" class = "com.workit.action.DeptAction" method ="{1}">
+				<result name="findalldept">deptManage/showalldept.jsp</result>
+				<result name="deletesucc" type="chain">DeptAction_findalldept</result>
+				<result name="savesucc" type="chain">DeptAction_findalldept</result>
+				<result name="update" >deptManage/updatedept.jsp</result>
+				<result name="updatedept" type="chain">DeptAction_findalldept</result>
+			</action>
+			<!-- 起点管理模块 -->
+			<action name="OutsetAction_*" class = "com.workit.action.OutsetAction" method ="{1}">
+				<result name="findalloutset">/outsetManage/showalloutset.jsp</result>
+				<result name="deletesucc" type="chain">OutsetAction_findalloutset</result>
+				<result name="savesucc" type="chain">OutsetAction_findalloutset</result>
+				<result name="update" >outsetManage/updateoutset.jsp</result>
+				<result name="updateoutset" type="chain">OutsetAction_findalloutset</result>
+			
+			</action>
+			<!-- 终点管理模块 -->
+			<action name="EndsetAction_*" class = "com.workit.action.EndsetAction" method ="{1}">
+				<result name="findallendset">/endsetManage/showallendset.jsp</result>
+				<result name="deletesucc" type="chain">EndsetAction_findallendset</result>
+				<result name="savesucc" type="chain">EndsetAction_findallendset</result>
+				<result name="update" >endsetManage/updateendset.jsp</result>
+				<result name="updateendset" type="chain">EndsetAction_findallendset</result>
+			
+			</action>
+			<!-- 订单管理模块 -->
+			<action name="OrderAction_*" class = "com.workit.action.OrderAction" method ="{1}">
+				<result name="findallorder">/orderManage/showallorder.jsp</result>
+				<result name="deletesucc" type="chain">OrderAction_findallorder</result>
+				<result name="savesucc" type="chain">OrderAction_findallorder</result>
+				<result name="update" type="chain" >PreUserAction_getoutend2</result>
+				<result name="updateorder" type="chain">OrderAction_findallorder</result>
+			
+			</action>
+			<!-- 车辆种类模块 -->
+			<action name="CartypeAction_*" class = "com.workit.action.CartypeAction" method ="{1}">
+				<result name="findallcartype">/cartypeManage/showallcartype.jsp</result>
+				<result name="deletesucc" type="chain">CartypeAction_findallcartype</result>
+				<result name="savesucc" type="chain">CartypeAction_findallcartype</result>
+				<result name="update" >cartypeManage/updatecartype.jsp</result>
+				<result name="updatecartype" type="chain">CartypeAction_findallcartype</result>
+			
+			</action>
+			<!-- 角色管理模块 -->
+			<action name="RoleAction_*" class = "com.workit.action.RoleAction" method="{1}">
+				<result name="findallrole">roleManage/showallrole.jsp</result>
+				<result name="deletesucc">roleManage/showallrole.jsp</result>
+				<result name="update" type="chain" >PreUserAction_getpower</result>
+				<result name="updaterole" type="chain" >RoleAction_findallrole</result>
+			</action>
+			<!-- 预处理模块 -->
+			<action name="PreUserAction_*" class = "com.workit.action.PreUserAction" method="{1}">
+				<result name="getroledept">userManage/saveuser.jsp</result>
+				<result name="getdeptrole">userManage/updateuser.jsp</result>
+				<result name="getpower">roleManage/updaterole.jsp</result>
+				<result name="getoutset">orderManage/saveorder.jsp</result>
+				<result name="getoutset2">orderManage/updateorder.jsp</result>
+				
+			</action>
+			</package>
+</struts>    

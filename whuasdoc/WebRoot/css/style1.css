@@ -1,0 +1,369 @@
+
+/* ==================================================================
+ * Table of Contents:
+ *
+ * 1.0 - CSS Reset
+ * 2.0 - Main and Canvas 
+ * 3.0 - Home Area
+ * 4.0 - Section 1
+ * 5.0 - Section 2
+ * 6.0 - Section 3
+ * 7.0 - Section 4
+ * 8.0 - Button area 
+
+================================================================== */
+
+
+
+/* ==================================================================
+	1.0 CSS Reset
+================================================================== */
+
+
+html, body{
+    height: auto;
+	width:100%;
+}
+body {
+	font-family : Source Sans Pro;
+	text-align : center;
+	color : #fff;
+	background: transparent url("../images/body_bg1.jpg") no-repeat fixed 0% 0% / cover;
+	background-size:100% 100%;
+}
+h2 {
+	font-size : 4em;
+	padding-top : 5% !important ;
+	color : #fff;
+	font-family:comic sans ms !important;
+	/*font-family:Broadway !important;*/
+	/*font-family:Algerian !important;*/
+	/*font-family:Berlin Sans FB Demi !important;*/
+	/*font-family:Narkisim !important;*/
+	/*font-family:Old English Text MT !important;*/
+
+}
+h4 {
+	font-size : 2em;
+	color : #fff;
+	padding-bottom : 4% !important ;
+	margin-top:10px;
+}
+p {
+	font-size : 19px;
+	line-height : 33px;
+	opacity : 0.699999988079071044921875;
+	text-align : justify;
+} 
+img {
+	max-width : 100% !important ;
+}
+iframe{
+	width:100%;
+	border:1px solid #ddd;
+	height:220px;
+}
+::-webkit-scrollbar, -moz-scrollbar {
+	width : 4px;
+}
+::-webkit-scrollbar-track, -moz-scrollbar {
+	width : 4px;
+	background : rgba(51, 51, 51, 0.21);
+}
+::-webkit-scrollbar-thumb, -moz-scrollbar {
+	background : rgba(51, 51, 51, 0.71);
+}
+.clear {
+	clear : both;
+	float : none;
+}
+.copyrights{
+	text-indent:-9999px;
+	height:0;
+	line-height:0;
+	font-size:0;
+	overflow:hidden;
+}
+/* ==================================================================
+	2.0 Main and Canvas 
+================================================================== */
+
+#main {
+	width : 100%;
+	position : absolute;
+	top : 0;
+	left : 0;
+	z-index : 2;
+	height : 678px;
+}
+.home_area, .section {
+	width:100%;
+	height:678px;
+	background :rgba(0, 1, 3, 0.7) no-repeat fixed 0% 0% / cover;
+	border-bottom : 3px solid #000;
+	background-size:100% 100%;
+
+}
+#canvas-holder {
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100% !important ;
+	overflow : hidden;
+	z-index : -1;
+	opacity : 0.5;
+}
+
+/* ==================================================================
+	3.0 Home Area  
+================================================================== */
+
+.logo {
+	height : 80px;
+}
+.logo img {
+	padding : 2%;
+}
+.home_area_text h2 {
+	vertical-align : middle;
+	font-size : 4em;
+	color : #fff;
+}
+.home_area_text h4 {
+	vertical-align : middle;
+	font-size : 2em;
+}
+ul.countdown {
+	list-style : none;
+	padding : 0;
+	display : block;
+	text-align : center;
+	margin : 5% 0;
+}
+ul.countdown li {
+	display : inline-block;
+	padding : 24px;
+}
+ul.countdown li span {
+	font-family : 'Roboto Slab', serif;
+	font-size : 60px;
+	font-weight : 200;
+	line-height : 80px;
+	color : #2098F5;
+}
+ul.countdown p {
+	font-size : 18px;
+	float : right;
+	padding-top : 20px;
+	text-transform : capitalize;
+	font-weight : 700;
+	color : #fff;
+}
+.subscribe {
+	width : 40% !important ;
+	margin : 0 auto !important ;
+}
+.email_input {
+	padding : 10px;
+	border : #ddd solid 1px;
+	background : none;
+	width : 100%;
+	margin : 10px 0;
+	font-weight : bold;
+}
+.email_submit {
+	border : #ddd solid 1px;
+	border-radius : 5px;
+	padding : 10px 20px;
+	background : #2098F5;
+}
+.email_submit:hover {
+	opacity:0.8;
+}
+.email_margin_top {
+	margin-top : 60px;
+}
+
+/* ==================================================================
+	4.0 Section 1  Service area
+================================================================== */
+
+.single_carousel {
+	margin : 20px;
+}
+.big_icon {
+	background-color : #FFF;
+	border-radius : 5%;
+	font-size : 51px;
+	height : 100px;
+	line-height : 100px;
+	width : 100px;
+	overflow : hidden;
+	color : #2098F5;
+}
+.big_icon:hover {
+	background-color : #2098F5;
+	color : #fff;
+}
+
+/* ==================================================================
+	5.0 Section 2  Team member area
+================================================================== */
+
+.teamone img {
+	position : relative;
+	width : 100%;
+	height : 100%;
+}
+.member_icon i, .member_icon1 i, .member_icon2 i, .member_icon3 i {
+	float : right;
+}
+.member_icon i:hover, .member_icon1 i:hover, .member_icon2 i:hover, .member_icon3 i:hover {
+	border : #ddd solid 1px;
+}
+.member_icon, .member_icon1, .member_icon2, .member_icon3 {
+	position : absolute;
+	width : 100%;
+	height : 100%;
+	top : 0;
+	left : 0;
+	z-index : 4;
+}
+.overlay, .overlay1, .overlay2, .overlay3 {
+	z-index : 3;
+	left : 0;
+	top : 0;
+	background : #2098F5;
+	width : 100%;
+	height : 100%;
+	opacity : 0.5;
+	position : absolute;
+}
+.name_member {
+	line-height : 35px;
+	font-weight : bold;
+	position : absolute;
+	font-size:20px;
+}
+.message {
+	margin-bottom : -43px;
+	overflow : hidden;
+}
+.button_margin {
+	margin-top : 60px !important ;
+}
+.social_icon i {
+	border : #ddd solid 1px;
+	overflow : hidden;
+}
+.social_icon ul li {
+	display : inline-block;
+	margin : 5px;
+}
+.facebook:hover {
+	color : #3B5998;
+}
+.twitter:hover {
+	color : #00ACED;
+}
+.google:hover {
+	color : #E74C3C;
+}
+.in:hover {
+	color : #007BB6;
+}
+.link:hover {
+	color : #3B5998;
+}
+.youtube:hover {
+	color : #E74C3C;
+}
+.small_icon {
+	background-color : #fff;
+	border-radius : 50%;
+	font-size : 30px;
+	height : 40px;
+	width : 40px;
+	line-height : 40px;
+	overflow : hidden;
+	color : #666;
+}
+
+/* ==================================================================
+	6.0 Section 3  About area
+================================================================== */
+
+.under_p {
+	margin-top : 30px;
+	text-align : justify;
+}
+
+/* ==================================================================
+	7.0 Section 4  Contact area
+================================================================== */
+
+.map_hide, .hide_social{
+	border:1px solid #ddd;
+	height:315px;
+}
+.map_social {
+	padding : 15px 0 !important ;
+}
+.phone_p {
+	text-align : center;
+	font-weight : normal;
+	padding-top : 0 !important ;
+	margin-top : -15px;
+	padding-bottom : 5px;
+}
+.fa-angle-down, .fa-times {
+	font-size : 25px;
+	cursor : pointer;
+}
+.place-card, .place-card-medium {
+	width : 117px !important ;
+}
+
+/* ==================================================================
+	8.0  Button area
+================================================================== */
+
+.btn_menu {
+	border : 1px solid #ddd;
+	border-radius : 10px;
+	width : 158px;
+	margin-top:20px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:10px;
+	background : none;
+	position : relative;
+	z-index : 1;
+	color : #fff;
+	font-weight : bold;
+}
+.button_area {
+	width : 100%;
+	height : 100%;
+	margin-top: 10px;	
+}
+.button_area h3 {
+	color : #fff;
+}
+.btn_menu:after {
+	transition : 0.40s;
+	content : "";
+	position : absolute;
+	left : 0;
+	top : 0;
+	width : 0;
+	height : 100%;
+	background : #ddd;
+	z-index : -1;
+	border-radius : 10px;
+	opacity : 0.5;
+}
+.btn_menu:hover:after {
+	width : 100%;
+}

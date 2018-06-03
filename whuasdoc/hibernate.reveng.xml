@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+
+	<table name="T_DEPT" schema="HUASDOC"
+		class="com.workit.bean.DeptBean">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="T_POWER" schema="HUASDOC"
+		class="com.workit.bean.PowerBean">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="T_ROLE" schema="HUASDOC"
+		class="com.workit.bean.RoleBean">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="T_USER" schema="HUASDOC"
+		class="com.workit.bean.UserBean">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="T_CAR" schema="HUASDOC"
+		class="com.workit.bean.CarBean">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="T_CARTYPE" schema="HUASDOC"
+		class="com.workit.bean.CartypeBean">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="T_ENDSET" schema="HUASDOC"
+		class="com.workit.bean.EndsetBean">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="T_OUTSET" schema="HUASDOC"
+		class="com.workit.bean.OutsetBean">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+<table name="T_ORDER" schema="HUASDOC"
+	class="com.workit.bean.orderBean">
+	<primary-key>
+		<generator class="sequence"></generator>
+	</primary-key>
+</table>
+</hibernate-reverse-engineering>

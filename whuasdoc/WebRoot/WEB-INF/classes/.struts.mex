@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="huasdoc" location="50,50" size="170,1605">
+    <action name="UserAction_*" location="10,20" size="150,167">
+      <result name="loginsucc" />
+      <result name="failer">
+        <resourceEdge source="failer" routing="0" target="index.jsp" />
+      </result>
+      <result name="findalluser">
+        <resourceEdge source="findalluser" routing="0" target="showalluser.jsp" />
+      </result>
+      <result name="deletesucc" />
+      <result name="savesucc" />
+      <result name="update" />
+      <result name="updateuser" />
+    </action>
+    <action name="PowerAction_*" location="10,220" size="150,146">
+      <result name="findallpower">
+        <resourceEdge source="findallpower" routing="0" target="manage.jsp" />
+      </result>
+      <result name="findAllpower">
+        <resourceEdge source="findAllpower" routing="0" target="showallpower.jsp" />
+      </result>
+      <result name="deletesucc" />
+      <result name="savesucc" />
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="updatepower.jsp" />
+      </result>
+      <result name="updatepower" />
+    </action>
+    <action name="CarAction_*" location="10,420" size="150,125">
+      <result name="findallcar">
+        <resourceEdge source="findallcar" routing="0" target="showallcar.jsp" />
+      </result>
+      <result name="deletesucc" />
+      <result name="savesucc" />
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="updatecar.jsp" />
+      </result>
+      <result name="updatecar" />
+    </action>
+    <action name="DeptAction_*" location="10,570" size="150,125">
+      <result name="findalldept">
+        <resourceEdge source="findalldept" routing="0" target="showalldept.jsp" />
+      </result>
+      <result name="deletesucc" />
+      <result name="savesucc" />
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="updatedept.jsp" />
+      </result>
+      <result name="updatedept" />
+    </action>
+    <action name="OutsetAction_*" location="10,720" size="150,125">
+      <result name="findalloutset">
+        <resourceEdge source="findalloutset" routing="0" target="showalloutset.jsp" />
+      </result>
+      <result name="deletesucc" />
+      <result name="savesucc" />
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="updateoutset.jsp" />
+      </result>
+      <result name="updateoutset" />
+    </action>
+    <action name="EndsetAction_*" location="10,870" size="150,125">
+      <result name="findallendset">
+        <resourceEdge source="findallendset" routing="0" target="showallendset.jsp" />
+      </result>
+      <result name="deletesucc" />
+      <result name="savesucc" />
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="updateendset.jsp" />
+      </result>
+      <result name="updateendset" />
+    </action>
+    <action name="OrderAction_*" location="10,1020" size="150,125">
+      <result name="findallorder">
+        <resourceEdge source="findallorder" routing="0" target="showallorder.jsp" />
+      </result>
+      <result name="deletesucc" />
+      <result name="savesucc" />
+      <result name="update" />
+      <result name="updateorder" />
+    </action>
+    <action name="CartypeAction_*" location="10,1170" size="150,125">
+      <result name="findallcartype">
+        <resourceEdge source="findallcartype" routing="0" target="showallcartype.jsp" />
+      </result>
+      <result name="deletesucc" />
+      <result name="savesucc" />
+      <result name="update">
+        <resourceEdge source="update" routing="0" target="updatecartype.jsp" />
+      </result>
+      <result name="updatecartype" />
+    </action>
+    <action name="RoleAction_*" location="10,1320" size="150,104">
+      <result name="findallrole">
+        <resourceEdge source="findallrole" routing="0" target="showallrole.jsp" />
+      </result>
+      <result name="deletesucc">
+        <resourceEdge source="deletesucc" routing="0" target="showallrole.jsp" />
+      </result>
+      <result name="update" />
+      <result name="updaterole" />
+    </action>
+    <action name="PreUserAction_*" location="10,1470" size="150,125">
+      <result name="getroledept">
+        <resourceEdge source="getroledept" routing="0" target="saveuser.jsp" />
+      </result>
+      <result name="getdeptrole">
+        <resourceEdge source="getdeptrole" routing="0" target="updateuser.jsp" />
+      </result>
+      <result name="getpower">
+        <resourceEdge source="getpower" routing="0" target="updaterole.jsp" />
+      </result>
+      <result name="getoutset">
+        <resourceEdge source="getoutset" routing="0" target="saveorder.jsp" />
+      </result>
+      <result name="getoutset2">
+        <resourceEdge source="getoutset2" routing="0" target="updateorder.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="findall.jsp" path="/findall.jsp" location="350,50" size="150,55" />
+  <webResource name="index.jsp" path="/index.jsp" location="500,50" size="150,55" />
+  <webResource name="manage.jsp" path="/manage.jsp" location="650,50" size="150,55" />
+  <webResource name="findalluser.jsp" path="/findalluser.jsp" location="50,200" size="150,55" />
+  <webResource name="showalluser.jsp" path="/userManage/showalluser.jsp" location="200,200" size="150,55" />
+  <webResource name="showallrole.jsp" path="roleManage/showallrole.jsp" location="500,200" size="150,55" />
+  <webResource name="saveuser.jsp" path="userManage/saveuser.jsp" location="50,350" size="150,55" />
+  <webResource name="updateuser.jsp" path="userManage/updateuser.jsp" location="350,350" size="150,55" />
+  <webResource name="updaterole.jsp" path="roleManage/updaterole.jsp" location="650,350" size="150,55" />
+  <webResource name="showallpower.jsp" path="powerManage/showallpower.jsp" location="50,500" size="150,55" />
+  <webResource name="updatepower.jsp" path="powerManage/updatepower.jsp" location="350,500" size="150,55" />
+  <webResource name="showallcar.jsp" path="/carManage/showallcar.jsp" location="650,500" size="150,55" />
+  <webResource name="updatecar.jsp" path="carManage/updatecar.jsp" location="50,650" size="150,55" />
+  <webResource name="showallpower.jsp" path="/powerManage/showallpower.jsp" location="350,650" size="150,55" />
+  <webResource name="showalldept.jsp" path="deptManage/showalldept.jsp" location="650,650" size="150,55" />
+  <webResource name="updatedept.jsp" path="deptManage/updatedept.jsp" location="50,800" size="150,55" />
+  <webResource name="showalloutset.jsp" path="/outsetManage/showalloutset.jsp" location="350,800" size="150,55" />
+  <webResource name="updateoutset.jsp" path="outsetManage/updateoutset.jsp" location="650,800" size="150,55" />
+  <webResource name="showallendset.jsp" path="/endsetManage/showallendset.jsp" location="50,950" size="150,55" />
+  <webResource name="updateendset.jsp" path="endsetManage/updateendset.jsp" location="350,950" size="150,55" />
+  <webResource name="showallorder.jsp" path="/orderManage/showallorder.jsp" location="650,950" size="150,55" />
+  <webResource name="showallcartype.jsp" path="/cartypeManage/showallcartype.jsp" location="50,1100" size="150,55" />
+  <webResource name="updatecartype.jsp" path="cartypeManage/updatecartype.jsp" location="350,1100" size="150,55" />
+  <webResource name="saveorder.jsp" path="orderManage/saveorder.jsp" location="650,1100" size="150,55" />
+  <webResource name="updateorder.jsp" path="orderManage/updateorder.jsp" location="50,1250" size="150,55" />
+  <include file="struts-default.xml" location="350,1250" size="150,30" />
+</Struts2Diagram>
+

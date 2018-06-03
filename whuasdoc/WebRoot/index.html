@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+        <!--=============== Meta and Title  ===============-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Obey - Online registration of yocan  </title>
+		<!-- favicon icon -->			
+		<link rel="icon" type="image/png" href="favicon.png"> 
+        <!--=============== Include all css file  ===============-->	
+		<link rel="stylesheet" href="css/animate.css" media="all" />            <!-- Animate css -->
+		<link rel="stylesheet" href="css/font-awesome.min.css" media="all" />   <!-- Font awesome css -->
+        <link rel="stylesheet" href="css/font-sourch_sun_pro.css"/>             <!-- Font css -->		
+        <link rel="stylesheet" href="css/slicknav.css"/>	 					<!-- Slicknav css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>  					<!-- Bootstrap -->
+        <link rel="stylesheet" href="css/owl.carousel.css">	   					<!-- carousel css -->
+        <link rel="stylesheet" href="css/owl.theme.css">   						<!-- Owl theme css -->			
+		<link rel="stylesheet" href="css/reset.css"/>						 	<!-- Recet css -->
+		<link rel="stylesheet" href="switcher/switcher.css"/>					<!-- Switcher css -->				
+		<link rel="stylesheet" href="css/style1.css"/>							<!-- Style css -->
+		<link rel="stylesheet" href="css/responsive.css" media="all" />			<!-- Responsive css -->
+		<link rel="stylesheet" href="css/preloder.css" media="all" />			<!-- Preloder css -->
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+		<style type="text/css">
+			a:hover{
+				text-decoration:none;
+			}
+			img{
+				margin:100px 20px 20px 20px;
+			}
+			h4:hover{
+				underline:none;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- loader-wrapper -->		
+		<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="home_area_text">
+								<h2>Yocan 物 流 管 理 系 统</h2> <!-- Page title -->
+								<h4>Welcome To Our Website</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+		</div>
+		<!-- end loader-wrapper -->	
+		<!-- canvas -->			
+		<div id="canvas-holder">
+			<canvas id="demo-canvas"></canvas>
+		</div>
+
+	<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页登录</a></div>
+		<div class=""> <!-- Home area-->
+			<div class="container">
+				<div class="row">
+				 	<div class="col-sm-6">
+						<div class="image_background">
+							<a href="cusindex.jsp"><img src="images/image_background.png" alt="" /></a>
+							<a href="cusindex.jsp"><h4>我 是 客 户 </h4></a>
+						</div>
+							
+					</div>
+					<div class="col-sm-6">
+						<div class="pattern_background">
+							<a href="index.jsp"><img src="images/pattren_background.png" alt="" /></a>
+							<a href="index.jsp""><h4 >我 是 管 理 员</h4></a>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+<!--
+##  javascript All file include
+=============================================================================== -->			
+		
+		<script src="js/jquery-1.9.1.min.js"></script>	              	<!-- Main js file -->
+		<script src="js/custom.js"></script>						   	<!-- Custom js file -->	
+		<script src="js/form-contact.js"></script>						<!-- form-contact js file -->
+		<script src="js/jquery.slicknav.min.js"></script>				<!-- Slicknav js file -->
+		<script src="js/bootstrap.min.js"></script>						<!-- Bootstrap js file -->
+		<script src="js/owl.carousel.min.js"></script>					<!-- Carousel js file -->
+		<script src="js/canvas.js"></script>     						<!-- canvas js file -->  	
+		<script src="js/jquery.ajaxchimp.min.js"></script>				<!-- Ajaxchimp js file -->
+		<script src="switcher/switcher.js"></script>					<!-- Switcher js file -->
+		<script type="text/javascript">
+			jQuery('document').ready(function() {
+					
+				$(".image_background").hover(function() {
+					$(".image_background img").show(0).addClass('animated  pulse');
+					$(".image_background h4").show(0).addClass('animated flipInY');
+				});							
+				
+				$(".image_background").mouseleave(function() {
+					$(".image_background img").removeClass('pulse');
+					$(".image_background h4").removeClass('flipInY');
+				});	
+				
+				$(".pattern_background").hover(function() {
+					$(".pattern_background img").show(0).addClass('animated pulse');
+					$(".pattern_background h4").show(0).addClass('animated flipInY');
+				});							
+				
+				$(".pattern_background").mouseleave(function() {
+					$(".pattern_background img").removeClass('pulse');
+					$(".pattern_background h4").removeClass(' flipInY');
+				});	
+			});
+		</script>
+
+	</body>
+</html>
